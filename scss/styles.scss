@@ -1,0 +1,112 @@
+// Import variables
+
+@import 'variables.scss';
+
+
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+// Form styles
+
+body {
+  color: $blue__dark;
+  font-family: $Luxi;
+  font-size: 75%;
+  line-height: 1.5rem;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 12px;
+
+  @media (min-width: $large) {
+    padding: 36px;
+  }
+}
+
+.wrapper {
+  border: 1px solid $blue__light;
+  border-radius: 10px;
+  width: 100%;
+
+  @media (min-width: $large) {
+    width: 500px;
+  }
+
+  .header {
+    background-color: $blue__light;
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    padding: 10px 30px;
+  }
+
+  &--form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    padding: 12px 24px;
+
+    .label {
+      font-size: 1.125rem;
+      margin: 24px 0px 6px;
+    }
+  }
+
+  .form--item {
+    &__select {
+      padding: 12px 0 30px;
+      select {
+        background-color: $white;
+        height: 36px;
+        width: 240px;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: auto;
+    }
+  }
+}
+
+
+// Buttons
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  width: 130px;
+  height: 40px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  &:focus {
+    outline: 3px solid $teal__light;
+    outline-offset: 2px;
+  }
+  &__reset {
+    background-color: $white;
+    color: $teal;
+    &:hover {
+      background-color: $teal__light;
+    }
+    &:focus {
+      background-color: $teal__light;
+    }
+  }
+  &__submit {
+    background-color: $teal;
+    color: $white;
+  }
+}

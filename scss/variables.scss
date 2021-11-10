@@ -1,0 +1,25 @@
+// Import font
+
+@import '../fonts/font.css';
+
+// Breakpoints
+
+$xs: 320px;
+$small: 480px;
+$medium: 720px;
+$large: 920px;
+$xl: 1160px; 
+$xxl: 1440px;
+$max-width: $xxl;
+
+// Colors
+
+$blue__dark: #223748;
+$blue__light: #eceff1;
+$teal: #2d7880;
+$teal__light: #e6f4f4;
+$white: #ffffff;
+
+// Fonts
+
+$Luxi: 'Luxi Sans', Helvetica, sans-serif;
