@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Vehicle form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="header">Your Vehicle</h1>
+    <div class="wrapper--form">
+      <form>
+        <label for="vehicle-select" class="label">Vehicle type</label>
+        <div class="form--item__select">
+          <select id="vehicle-select" name="vehicle">
+            <option value="" selected>- Select -</option>
+            <option value="coupe">Coupe</option>
+            <option value="mini_van">Mini van</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+          </select></div>
+        <div class="form--item__buttons"><button class="button button__reset" type="reset" value="Cancel">Cancel</button>
+          <button class="button button__submit" type="submit" value="Save">Save</button></div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
